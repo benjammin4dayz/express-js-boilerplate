@@ -6,7 +6,7 @@
   "main": "src/app.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/app.js",
-    "lint": "eslint ."
+    "lint": "eslint src/ --report-unused-disable-directives --max-warnings 0"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,10 @@
     "@babel/core": "^7.24.7",
     "@babel/node": "^7.22.19",
     "@babel/preset-env": "^7.24.7",
-    "eslint": "^8.49.0",
+    "@eslint/js": "^9.5.0",
+    "eslint": "^9.5.0",
     "eslint-plugin-n": "^17.9.0",
+    "globals": "^15.6.0",
     "nodemon": "^3.1.4"
   },
   "engines": {
