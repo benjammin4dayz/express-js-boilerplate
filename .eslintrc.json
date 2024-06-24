@@ -1,26 +1,23 @@
 {
-    "env": {
-        "node" : true,
-        "es6" : true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:node/recommended"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 2020,
-        "sourceType": "module"
-    },
-    "rules": {
-        "node/exports-style": ["error", "module.exports"],
-        "node/file-extension-in-import": ["error", "never"],
-        "node/prefer-global/buffer": ["error", "always"],
-        "node/prefer-global/console": ["error", "always"],
-        "node/prefer-global/process": ["error", "always"],
-        "node/prefer-global/url-search-params": ["error", "always"],
-        "node/prefer-global/url": ["error", "always"],
-        "node/prefer-promises/dns": "error",
-        "node/prefer-promises/fs": "error",
-        "node/no-unsupported-features/es-syntax": "off"
-    }
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "plugin:n/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "n/exports-style": ["error", "module.exports"],
+    "n/file-extension-in-import": ["error", "never"],
+    "n/prefer-global/buffer": ["error", "always"],
+    "n/prefer-global/console": ["error", "always"],
+    "n/prefer-global/process": ["error", "always"],
+    "n/prefer-global/url-search-params": ["error", "always"],
+    "n/prefer-global/url": ["error", "always"],
+    "n/prefer-promises/dns": "error",
+    "n/prefer-promises/fs": "error",
+    "n/no-unsupported-features/es-syntax": "off"
+  }
 }
